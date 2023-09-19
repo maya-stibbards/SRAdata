@@ -1,0 +1,5 @@
+## Download SRA list by downloading Accession List from NCBI>SRA>*Search SRR #*>Sendto>File?AccessionLIst
+cd C:\Users\... \sratoolkit.3.0.7-win64\bin
+>prefetch -- option-file SraAccList.csv
+## OR
+fastq-dump --split-3 --gzip $(</path_to/SRR_Acc_List.csv) ## split to FastQ files
